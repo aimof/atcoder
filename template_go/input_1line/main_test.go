@@ -16,7 +16,7 @@ func TestDo(t *testing.T) {
 			t.Error()
 		}
 		if got != tc.want {
-			t.Error(i, got, tc.want)
+			t.Errorf("case: %d\ngot:  %v\nwant: %v", i, got, tc.want)
 		}
 	}
 }
